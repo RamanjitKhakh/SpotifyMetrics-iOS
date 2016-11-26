@@ -102,11 +102,43 @@
                     <connections>
                         <outlet property="statusLabel" destination="HbU-5M-Iph" id="vRF-e9-Yvc"/>
                         <segue destination="vXZ-lx-hvc" kind="push" identifier="ShowPlayer" id="zaK-VN-vzp"/>
+                        <segue destination="KR7-eA-LdI" kind="push" identifier="showMetric" id="NpH-BF-JXB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbm-R1-MBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-590" y="43"/>
+            <point key="canvasLocation" x="-579" y="45"/>
+        </scene>
+        <!--Metrics View Controller-->
+        <scene sceneID="ATy-bW-jBm">
+            <objects>
+                <viewController id="KR7-eA-LdI" customClass="metricsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hch-Oc-dku"/>
+                        <viewControllerLayoutGuide type="bottom" id="ivg-Gv-tda"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4I9-Tv-Iwr">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxP-WD-yF5">
+                                <rect key="frame" x="120" y="634" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutClick:" destination="KR7-eA-LdI" eventType="touchUpInside" id="nvH-IJ-49D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a1P-Fz-F5E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWB-I0-YNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579" y="1006"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8DY-eR-bzm">

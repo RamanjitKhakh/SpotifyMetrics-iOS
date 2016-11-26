@@ -21,6 +21,7 @@
 		790762851DEA12E7007B4ED0 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762821DEA12E7007B4ED0 /* SpotifyAudioPlayback.framework */; };
 		790762861DEA12E7007B4ED0 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762831DEA12E7007B4ED0 /* SpotifyAuthentication.framework */; };
 		790762871DEA12E7007B4ED0 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762841DEA12E7007B4ED0 /* SpotifyMetadata.framework */; };
+		790762891DEA16EB007B4ED0 /* metricsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790762881DEA16EB007B4ED0 /* metricsViewController.m */; };
 		999DC7101DAFD271005C0796 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999DC70F1DAFD271005C0796 /* WebViewController.m */; };
 		999DC7141DAFD7C2005C0796 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999DC7131DAFD7C2005C0796 /* SafariServices.framework */; };
 		CE0C640C1A9B61EB00B5F6F6 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C640B1A9B61EB00B5F6F6 /* LoginController.m */; };
@@ -48,6 +49,8 @@
 		790762821DEA12E7007B4ED0 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		790762831DEA12E7007B4ED0 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
 		790762841DEA12E7007B4ED0 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		790762881DEA16EB007B4ED0 /* metricsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = metricsViewController.m; sourceTree = "<group>"; };
+		7907628A1DEA1704007B4ED0 /* metricsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = metricsViewController.h; sourceTree = "<group>"; };
 		999DC70E1DAFD271005C0796 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		999DC70F1DAFD271005C0796 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		999DC7131DAFD7C2005C0796 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				999DC70F1DAFD271005C0796 /* WebViewController.m */,
 				37E2C9EB18B4DF7D00D5D823 /* Images.xcassets */,
 				37E2C9D718B4DF7D00D5D823 /* Supporting Files */,
+				790762881DEA16EB007B4ED0 /* metricsViewController.m */,
+				7907628A1DEA1704007B4ED0 /* metricsViewController.h */,
 			);
 			path = "Simple Track Playback";
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790762891DEA16EB007B4ED0 /* metricsViewController.m in Sources */,
 				37E2C9EA18B4DF7D00D5D823 /* ViewController.m in Sources */,
 				999DC7101DAFD271005C0796 /* WebViewController.m in Sources */,
 				CE0C640C1A9B61EB00B5F6F6 /* LoginController.m in Sources */,

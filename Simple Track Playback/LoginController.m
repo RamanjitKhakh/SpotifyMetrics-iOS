@@ -119,7 +119,7 @@
 {
     self.firstLoad = NO;
     self.statusLabel.text = @"Logged in.";
-    [self performSegueWithIdentifier:@"ShowPlayer" sender:nil];
+    [self performSegueWithIdentifier:@"showMetric" sender:nil];
 }
 
 #pragma mark - SPTStoreControllerDelegate
@@ -135,15 +135,15 @@
     self.statusLabel.text = @"Logging in...";
     SPTAuth *auth = [SPTAuth defaultInstance];
     NSLog(@"spotify auth is %@", [[auth spotifyAppAuthenticationURL] absoluteString]);
-//    if ([SPTAuth supportsApplicationAuthentication]) {
-//        [[UIApplication sharedApplication] openURL:[auth spotifyAppAuthenticationURL] options:[[NSDictionary alloc] init] completionHandler:^(BOOL b){
-//            NSLog(@"returned");
-//        }];
-//    } else {
+    if ([SPTAuth supportsApplicationAuthentication]) {
+        [[UIApplication sharedApplication] openURL:[auth spotifyAppAuthenticationURL] options:[[NSDictionary alloc] init] completionHandler:^(BOOL b){
+            NSLog(@"returned");
+        }];
+    } else {
         self.authViewController = [self authViewControllerWithURL:[[SPTAuth defaultInstance] spotifyWebAuthenticationURL]];
         self.definesPresentationContext = YES;
         [self presentViewController:self.authViewController animated:YES completion:nil];
-//    }
+    }
 }
 
 - (void)renewTokenAndShowPlayer

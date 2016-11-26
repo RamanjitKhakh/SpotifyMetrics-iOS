@@ -28,6 +28,7 @@
     auth.clientID = @kClientId;
     auth.requestedScopes = @[SPTAuthStreamingScope];
     auth.redirectURL = [NSURL URLWithString:@kCallbackURL];
+    NSLog(@"callback url is %@", @kCallbackURL);
     #ifdef kTokenSwapServiceURL
     auth.tokenSwapURL = [NSURL URLWithString:@kTokenSwapServiceURL];
     #endif

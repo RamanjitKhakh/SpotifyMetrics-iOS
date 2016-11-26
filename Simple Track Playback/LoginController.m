@@ -84,6 +84,7 @@
 - (UIViewController *)authViewControllerWithURL:(NSURL *)url
 {
     UIViewController *viewController;
+    NSLog(@"init with url %@", url);
     if ([SFSafariViewController class]) {
         SFSafariViewController *safari = [[SFSafariViewController alloc] initWithURL:url];
         safari.delegate = self;

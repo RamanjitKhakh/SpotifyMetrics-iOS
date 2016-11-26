@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0744C19C1D9C03EA00C051FF /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C1991D9C03EA00C051FF /* SpotifyAudioPlayback.framework */; };
-		0744C19D1D9C03EA00C051FF /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C19A1D9C03EA00C051FF /* SpotifyAuthentication.framework */; };
-		0744C19E1D9C03EA00C051FF /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0744C19B1D9C03EA00C051FF /* SpotifyMetadata.framework */; };
 		378297E518BCDF4000EFF728 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378297E418BCDF4000EFF728 /* Security.framework */; };
 		378297E718BCDF4700EFF728 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378297E618BCDF4700EFF728 /* AVFoundation.framework */; };
 		37E2C9D118B4DF7D00D5D823 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E2C9D018B4DF7D00D5D823 /* Foundation.framework */; };
@@ -21,19 +18,17 @@
 		37E2C9E418B4DF7D00D5D823 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E2C9E218B4DF7D00D5D823 /* Main_iPhone.storyboard */; };
 		37E2C9EA18B4DF7D00D5D823 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E2C9E918B4DF7D00D5D823 /* ViewController.m */; };
 		37E2C9EC18B4DF7D00D5D823 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2C9EB18B4DF7D00D5D823 /* Images.xcassets */; };
+		790762851DEA12E7007B4ED0 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762821DEA12E7007B4ED0 /* SpotifyAudioPlayback.framework */; };
+		790762861DEA12E7007B4ED0 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762831DEA12E7007B4ED0 /* SpotifyAuthentication.framework */; };
+		790762871DEA12E7007B4ED0 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762841DEA12E7007B4ED0 /* SpotifyMetadata.framework */; };
 		999DC7101DAFD271005C0796 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999DC70F1DAFD271005C0796 /* WebViewController.m */; };
-		999DC7121DAFD7BF005C0796 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999DC7111DAFD7BF005C0796 /* WebKit.framework */; };
 		999DC7141DAFD7C2005C0796 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999DC7131DAFD7C2005C0796 /* SafariServices.framework */; };
 		CE0C640C1A9B61EB00B5F6F6 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C640B1A9B61EB00B5F6F6 /* LoginController.m */; };
 		CE4A60C91A9CBF9600DDA394 /* backdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4A60C81A9CBF9600DDA394 /* backdrop.png */; };
 		DD3274FE1A26C53F00957EF7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3274FD1A26C53F00957EF7 /* CoreData.framework */; };
-		DD76375C1A2039CF00AE0BDC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DD76375A1A2007F100AE0BDC /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0744C1991D9C03EA00C051FF /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
-		0744C19A1D9C03EA00C051FF /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
-		0744C19B1D9C03EA00C051FF /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
 		378297E418BCDF4000EFF728 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		378297E618BCDF4700EFF728 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		37E2C9CD18B4DF7D00D5D823 /* Simple Track Playback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Track Playback.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,16 +45,17 @@
 		37E2C9E818B4DF7D00D5D823 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		37E2C9E918B4DF7D00D5D823 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		37E2C9EB18B4DF7D00D5D823 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		790762821DEA12E7007B4ED0 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		790762831DEA12E7007B4ED0 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		790762841DEA12E7007B4ED0 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
 		999DC70E1DAFD271005C0796 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		999DC70F1DAFD271005C0796 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		999DC7111DAFD7BF005C0796 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		999DC7131DAFD7C2005C0796 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		CE0C640A1A9B61EB00B5F6F6 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		CE0C640B1A9B61EB00B5F6F6 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		CE4A60C81A9CBF9600DDA394 /* backdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backdrop.png; sourceTree = "<group>"; };
 		CECF6ACB1A1B7EFB000A29BD /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		DD3274FD1A26C53F00957EF7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DD76375A1A2007F100AE0BDC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +63,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790762871DEA12E7007B4ED0 /* SpotifyMetadata.framework in Frameworks */,
 				999DC7141DAFD7C2005C0796 /* SafariServices.framework in Frameworks */,
-				999DC7121DAFD7BF005C0796 /* WebKit.framework in Frameworks */,
-				0744C19E1D9C03EA00C051FF /* SpotifyMetadata.framework in Frameworks */,
+				790762851DEA12E7007B4ED0 /* SpotifyAudioPlayback.framework in Frameworks */,
 				DD3274FE1A26C53F00957EF7 /* CoreData.framework in Frameworks */,
-				0744C19C1D9C03EA00C051FF /* SpotifyAudioPlayback.framework in Frameworks */,
-				DD76375C1A2039CF00AE0BDC /* libsqlite3.dylib in Frameworks */,
 				378297E718BCDF4700EFF728 /* AVFoundation.framework in Frameworks */,
 				378297E518BCDF4000EFF728 /* Security.framework in Frameworks */,
 				37E2C9D318B4DF7D00D5D823 /* CoreGraphics.framework in Frameworks */,
 				37E2C9D518B4DF7D00D5D823 /* UIKit.framework in Frameworks */,
-				0744C19D1D9C03EA00C051FF /* SpotifyAuthentication.framework in Frameworks */,
+				790762861DEA12E7007B4ED0 /* SpotifyAuthentication.framework in Frameworks */,
 				37E2C9D118B4DF7D00D5D823 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,13 +99,11 @@
 		37E2C9CF18B4DF7D00D5D823 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				790762821DEA12E7007B4ED0 /* SpotifyAudioPlayback.framework */,
+				790762831DEA12E7007B4ED0 /* SpotifyAuthentication.framework */,
+				790762841DEA12E7007B4ED0 /* SpotifyMetadata.framework */,
 				999DC7131DAFD7C2005C0796 /* SafariServices.framework */,
-				999DC7111DAFD7BF005C0796 /* WebKit.framework */,
-				0744C1991D9C03EA00C051FF /* SpotifyAudioPlayback.framework */,
-				0744C19A1D9C03EA00C051FF /* SpotifyAuthentication.framework */,
-				0744C19B1D9C03EA00C051FF /* SpotifyMetadata.framework */,
 				DD3274FD1A26C53F00957EF7 /* CoreData.framework */,
-				DD76375A1A2007F100AE0BDC /* libsqlite3.dylib */,
 				378297E618BCDF4700EFF728 /* AVFoundation.framework */,
 				378297E418BCDF4000EFF728 /* Security.framework */,
 				37E2C9D018B4DF7D00D5D823 /* Foundation.framework */,
@@ -335,7 +327,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QL4D6T8B68;
-				FRAMEWORK_SEARCH_PATHS = ../..;
+				FRAMEWORK_SEARCH_PATHS = (
+					../..,
+					"$(PROJECT_DIR)/Simple\\ Track\\ Playback",
+					"$(PROJECT_DIR)/Simple\\ Track\\ Playback",
+					"$(PROJECT_DIR)/Simple\\ Track\\ Playback",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Simple Track Playback/Simple Track Playback-Prefix.pch";
 				INFOPLIST_FILE = "Simple Track Playback/Simple Track Playback-Info.plist";
@@ -355,7 +353,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = QL4D6T8B68;
-				FRAMEWORK_SEARCH_PATHS = ../..;
+				FRAMEWORK_SEARCH_PATHS = (
+					../..,
+					"$(PROJECT_DIR)/Simple\\ Track\\ Playback",
+					"$(PROJECT_DIR)/Simple\\ Track\\ Playback",
+					"$(PROJECT_DIR)/Simple\\ Track\\ Playback",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Simple Track Playback/Simple Track Playback-Prefix.pch";
 				INFOPLIST_FILE = "Simple Track Playback/Simple Track Playback-Info.plist";

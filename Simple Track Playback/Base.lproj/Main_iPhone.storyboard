@@ -112,7 +112,7 @@
         <!--Metrics View Controller-->
         <scene sceneID="ATy-bW-jBm">
             <objects>
-                <viewController id="KR7-eA-LdI" customClass="metricsViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="KR7-eA-LdI" customClass="metricsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hch-Oc-dku"/>
                         <viewControllerLayoutGuide type="bottom" id="ivg-Gv-tda"/>
@@ -131,14 +131,56 @@
                                     <action selector="logoutClick:" destination="KR7-eA-LdI" eventType="touchUpInside" id="nvH-IJ-49D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ilo-GD-F4d">
+                                <rect key="frame" x="109" y="235" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Your Top Artist">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="ArialRoundedMTBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="topArtistClicked:" destination="KR7-eA-LdI" eventType="touchUpInside" id="BQF-zA-Cxz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="a1P-Fz-F5E"/>
+                    <connections>
+                        <segue destination="3AK-Jz-IyM" kind="push" identifier="showTopArtist" id="beJ-Rw-hZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWB-I0-YNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-579" y="1006"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hPf-SW-Gq3">
+            <objects>
+                <viewController id="3AK-Jz-IyM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w6Z-G3-6oz"/>
+                        <viewControllerLayoutGuide type="bottom" id="L1e-HV-465"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ygp-N1-e0K">
+                        <rect key="frame" x="0.0" y="94" width="350" height="606"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7be-lF-KSF"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjB-YZ-hXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="1006"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8DY-eR-bzm">

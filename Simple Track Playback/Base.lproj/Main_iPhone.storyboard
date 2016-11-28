@@ -107,7 +107,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbm-R1-MBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="45"/>
+            <point key="canvasLocation" x="-514" y="10"/>
+        </scene>
+        <!--Top Artist View Controller-->
+        <scene sceneID="JIU-3E-rQx">
+            <objects>
+                <tableViewController id="w1I-oQ-bCd" customClass="TopArtistViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="etR-UT-eEB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="fRi-lb-Fdc">
+                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Top Artist" id="cO3-bw-Gm1">
+                                    <barButtonItem key="backBarButtonItem" title="Back" id="OTK-Gm-hgb"/>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="5Sm-iz-fss" detailTextLabel="AnP-B2-xHH" style="IBUITableViewCellStyleSubtitle" id="QPp-ac-U52">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QPp-ac-U52" id="crI-fp-s4C">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Sm-iz-fss">
+                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AnP-B2-xHH">
+                                            <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="w1I-oQ-bCd" id="lcr-Vz-H74"/>
+                            <outlet property="delegate" destination="w1I-oQ-bCd" id="YJv-cp-dY5"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kaq-UU-iaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27" y="1007"/>
         </scene>
         <!--Metrics View Controller-->
         <scene sceneID="ATy-bW-jBm">
@@ -146,41 +201,17 @@
                                 </state>
                                 <connections>
                                     <action selector="topArtistClicked:" destination="KR7-eA-LdI" eventType="touchUpInside" id="BQF-zA-Cxz"/>
+                                    <segue destination="w1I-oQ-bCd" kind="modal" identifier="showTopArtist" id="LhH-KT-fcZ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="a1P-Fz-F5E"/>
-                    <connections>
-                        <segue destination="3AK-Jz-IyM" kind="push" identifier="showTopArtist" id="beJ-Rw-hZL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWB-I0-YNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-579" y="1006"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hPf-SW-Gq3">
-            <objects>
-                <viewController id="3AK-Jz-IyM" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="w6Z-G3-6oz"/>
-                        <viewControllerLayoutGuide type="bottom" id="L1e-HV-465"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ygp-N1-e0K">
-                        <rect key="frame" x="0.0" y="94" width="350" height="606"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7be-lF-KSF"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KjB-YZ-hXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="43" y="1006"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8DY-eR-bzm">
@@ -189,7 +220,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UgH-ve-9lg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UgH-ve-9lg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

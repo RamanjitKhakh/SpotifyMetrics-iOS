@@ -1,5 +1,5 @@
 //
-//  ArtistViewController.m
+//  ArtistViewController.h
 //  Simple Track Playback
 //
 //  Created by Ramanjit on 11/26/16.
@@ -7,3 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+
+@interface TopArtistViewController : UITableViewController
+@property NSMutableArray *artistList;
+
+@end

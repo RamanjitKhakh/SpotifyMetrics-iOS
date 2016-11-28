@@ -22,7 +22,7 @@
 		790762861DEA12E7007B4ED0 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762831DEA12E7007B4ED0 /* SpotifyAuthentication.framework */; };
 		790762871DEA12E7007B4ED0 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790762841DEA12E7007B4ED0 /* SpotifyMetadata.framework */; };
 		790762891DEA16EB007B4ED0 /* metricsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790762881DEA16EB007B4ED0 /* metricsViewController.m */; };
-		7907628C1DEA2972007B4ED0 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907628B1DEA2972007B4ED0 /* ArtistViewController.m */; };
+		7907628C1DEA2972007B4ED0 /* TopArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907628B1DEA2972007B4ED0 /* TopArtistViewController.m */; };
 		999DC7101DAFD271005C0796 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999DC70F1DAFD271005C0796 /* WebViewController.m */; };
 		999DC7141DAFD7C2005C0796 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999DC7131DAFD7C2005C0796 /* SafariServices.framework */; };
 		CE0C640C1A9B61EB00B5F6F6 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C640B1A9B61EB00B5F6F6 /* LoginController.m */; };
@@ -52,8 +52,8 @@
 		790762841DEA12E7007B4ED0 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
 		790762881DEA16EB007B4ED0 /* metricsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = metricsViewController.m; sourceTree = "<group>"; };
 		7907628A1DEA1704007B4ED0 /* metricsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = metricsViewController.h; sourceTree = "<group>"; };
-		7907628B1DEA2972007B4ED0 /* ArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistViewController.m; sourceTree = "<group>"; };
-		7907628D1DEA298D007B4ED0 /* ArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistViewController.h; sourceTree = "<group>"; };
+		7907628B1DEA2972007B4ED0 /* TopArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopArtistViewController.m; sourceTree = "<group>"; };
+		7907628D1DEA298D007B4ED0 /* TopArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopArtistViewController.h; sourceTree = "<group>"; };
 		999DC70E1DAFD271005C0796 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		999DC70F1DAFD271005C0796 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		999DC7131DAFD7C2005C0796 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -126,8 +126,8 @@
 				37E2C9DF18B4DF7D00D5D823 /* AppDelegate.h */,
 				37E2C9E018B4DF7D00D5D823 /* AppDelegate.m */,
 				37E2C9E218B4DF7D00D5D823 /* Main_iPhone.storyboard */,
-				7907628B1DEA2972007B4ED0 /* ArtistViewController.m */,
-				7907628D1DEA298D007B4ED0 /* ArtistViewController.h */,
+				7907628B1DEA2972007B4ED0 /* TopArtistViewController.m */,
+				7907628D1DEA298D007B4ED0 /* TopArtistViewController.h */,
 				37E2C9E818B4DF7D00D5D823 /* ViewController.h */,
 				37E2C9E918B4DF7D00D5D823 /* ViewController.m */,
 				CE0C640A1A9B61EB00B5F6F6 /* LoginController.h */,
@@ -232,7 +232,7 @@
 				CE0C640C1A9B61EB00B5F6F6 /* LoginController.m in Sources */,
 				37E2C9E118B4DF7D00D5D823 /* AppDelegate.m in Sources */,
 				37E2C9DD18B4DF7D00D5D823 /* main.m in Sources */,
-				7907628C1DEA2972007B4ED0 /* ArtistViewController.m in Sources */,
+				7907628C1DEA2972007B4ED0 /* TopArtistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

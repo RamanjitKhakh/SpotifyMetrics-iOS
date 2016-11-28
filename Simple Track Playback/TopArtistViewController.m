@@ -18,10 +18,11 @@
 @implementation TopArtistViewController
 
 - (void) viewWillAppear:(BOOL)animated {
-    NSLog(@"will appear");
+    
     
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
     SPTAuth *auth = [SPTAuth defaultInstance];
     
     NSString *authorizationString = [NSString stringWithFormat:@"Bearer %@", auth.session.accessToken];
@@ -44,6 +45,9 @@
     }]resume];
 }
 
+- (void) viewDidLoad {
+    
+}
 
 
 #pragma mark - Table View
@@ -54,6 +58,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
     return self.artistList.count;
 }
 

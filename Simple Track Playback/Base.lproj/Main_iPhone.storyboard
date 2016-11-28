@@ -109,7 +109,7 @@
             </objects>
             <point key="canvasLocation" x="-514" y="10"/>
         </scene>
-        <!--Top Artist View Controller-->
+        <!--Your Top Artists-->
         <scene sceneID="JIU-3E-rQx">
             <objects>
                 <tableViewController id="w1I-oQ-bCd" customClass="TopArtistViewController" sceneMemberID="viewController">
@@ -148,7 +148,9 @@
                             <outlet property="delegate" destination="w1I-oQ-bCd" id="YJv-cp-dY5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wyT-rB-6Id"/>
+                    <navigationItem key="navigationItem" title="Your Top Artists" id="wyT-rB-6Id">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="vIr-Th-Qqb"/>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kaq-UU-iaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +193,6 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="topArtistClicked:" destination="KR7-eA-LdI" eventType="touchUpInside" id="BQF-zA-Cxz"/>
                                     <segue destination="w1I-oQ-bCd" kind="push" identifier="showTopArtist" id="ecv-5X-EUa"/>
                                 </connections>
                             </button>
@@ -211,7 +212,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UgH-ve-9lg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UgH-ve-9lg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

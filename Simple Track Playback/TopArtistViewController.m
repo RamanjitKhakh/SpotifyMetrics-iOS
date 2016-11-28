@@ -17,8 +17,11 @@
 
 @implementation TopArtistViewController
 
-- (void) viewDidLoad {
-    [super viewDidLoad];
+- (void) viewWillAppear:(BOOL)animated {
+    NSLog(@"will appear");
+    
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     SPTAuth *auth = [SPTAuth defaultInstance];
     
     NSString *authorizationString = [NSString stringWithFormat:@"Bearer %@", auth.session.accessToken];
@@ -29,9 +32,9 @@
     
     
     [[[NSURLSession sharedSession] dataTaskWithRequest:requestWithHeaders completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        NSLog(@"response: %@",response);
-//        NSString *payload = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//        NSLog(@"data: %@", payload);
+        //NSLog(@"response: %@",response);
+        //NSString *payload = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        //NSLog(@"data: %@", payload);
         NSError *e;
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&e];
         
@@ -41,18 +44,21 @@
     }]resume];
 }
 
+
+
 #pragma mark - Table View
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"count obtained");
     return self.artistList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     NSData *object = self.artistList[indexPath.row];
@@ -66,6 +72,8 @@
     // Return NO if you do not want the specified item to be editable.
     return NO;
 }
+
+
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     //empty for now...

@@ -17,6 +17,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     
 }
@@ -27,6 +28,7 @@
 
 
 - (IBAction)topArtistClicked:(id)sender {
+    NSLog(@"saegue!!");
     [self performSegueWithIdentifier:@"showTopArtist" sender:nil];
 }
 

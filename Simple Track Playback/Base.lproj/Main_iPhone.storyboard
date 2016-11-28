@@ -114,24 +114,15 @@
             <objects>
                 <tableViewController id="w1I-oQ-bCd" customClass="TopArtistViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="etR-UT-eEB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="fRi-lb-Fdc">
-                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Top Artist" id="cO3-bw-Gm1">
-                                    <barButtonItem key="backBarButtonItem" title="Back" id="OTK-Gm-hgb"/>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="5Sm-iz-fss" detailTextLabel="AnP-B2-xHH" style="IBUITableViewCellStyleSubtitle" id="QPp-ac-U52">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="350" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QPp-ac-U52" id="crI-fp-s4C">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Sm-iz-fss">
@@ -157,7 +148,7 @@
                             <outlet property="delegate" destination="w1I-oQ-bCd" id="YJv-cp-dY5"/>
                         </connections>
                     </tableView>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="wyT-rB-6Id"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kaq-UU-iaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,7 +192,7 @@
                                 </state>
                                 <connections>
                                     <action selector="topArtistClicked:" destination="KR7-eA-LdI" eventType="touchUpInside" id="BQF-zA-Cxz"/>
-                                    <segue destination="w1I-oQ-bCd" kind="modal" identifier="showTopArtist" id="LhH-KT-fcZ"/>
+                                    <segue destination="w1I-oQ-bCd" kind="push" identifier="showTopArtist" id="ecv-5X-EUa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -384,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-115" y="45"/>
+            <point key="canvasLocation" x="-22" y="44"/>
         </scene>
     </scenes>
     <resources>

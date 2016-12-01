@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "37E2C9CC18B4DF7D00D5D823"
                BuildableName = "Simple Track Playback.app"
-               BlueprintName = "Simple Track Playback"
-               ReferencedContainer = "container:Simple Track Playback.xcodeproj">
+               BlueprintName = "Spotify Metrics"
+               ReferencedContainer = "container:Spotify Metrics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37E2C9CC18B4DF7D00D5D823"
             BuildableName = "Simple Track Playback.app"
-            BlueprintName = "Simple Track Playback"
-            ReferencedContainer = "container:Simple Track Playback.xcodeproj">
+            BlueprintName = "Spotify Metrics"
+            ReferencedContainer = "container:Spotify Metrics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,8 +57,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37E2C9CC18B4DF7D00D5D823"
             BuildableName = "Simple Track Playback.app"
-            BlueprintName = "Simple Track Playback"
-            ReferencedContainer = "container:Simple Track Playback.xcodeproj">
+            BlueprintName = "Spotify Metrics"
+            ReferencedContainer = "container:Spotify Metrics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,8 +76,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37E2C9CC18B4DF7D00D5D823"
             BuildableName = "Simple Track Playback.app"
-            BlueprintName = "Simple Track Playback"
-            ReferencedContainer = "container:Simple Track Playback.xcodeproj">
+            BlueprintName = "Spotify Metrics"
+            ReferencedContainer = "container:Spotify Metrics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

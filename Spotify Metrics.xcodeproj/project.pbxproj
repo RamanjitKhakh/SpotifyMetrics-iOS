@@ -34,14 +34,14 @@
 /* Begin PBXFileReference section */
 		378297E418BCDF4000EFF728 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		378297E618BCDF4700EFF728 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		37E2C9CD18B4DF7D00D5D823 /* Simple Track Playback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Track Playback.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E2C9CD18B4DF7D00D5D823 /* Spotify Metrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Metrics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E2C9D018B4DF7D00D5D823 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37E2C9D218B4DF7D00D5D823 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		37E2C9D418B4DF7D00D5D823 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		37E2C9D818B4DF7D00D5D823 /* Simple Track Playback-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple Track Playback-Info.plist"; sourceTree = "<group>"; };
+		37E2C9D818B4DF7D00D5D823 /* Spotify Metrics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spotify Metrics-Info.plist"; sourceTree = "<group>"; };
 		37E2C9DA18B4DF7D00D5D823 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37E2C9DC18B4DF7D00D5D823 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		37E2C9DE18B4DF7D00D5D823 /* Simple Track Playback-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simple Track Playback-Prefix.pch"; sourceTree = "<group>"; };
+		37E2C9DE18B4DF7D00D5D823 /* Spotify Metrics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spotify Metrics-Prefix.pch"; sourceTree = "<group>"; };
 		37E2C9DF18B4DF7D00D5D823 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37E2C9E018B4DF7D00D5D823 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		37E2C9E318B4DF7D00D5D823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		37E2C9CE18B4DF7D00D5D823 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37E2C9CD18B4DF7D00D5D823 /* Simple Track Playback.app */,
+				37E2C9CD18B4DF7D00D5D823 /* Spotify Metrics.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,10 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				CE4A60C81A9CBF9600DDA394 /* backdrop.png */,
-				37E2C9D818B4DF7D00D5D823 /* Simple Track Playback-Info.plist */,
+				37E2C9D818B4DF7D00D5D823 /* Spotify Metrics-Info.plist */,
 				37E2C9D918B4DF7D00D5D823 /* InfoPlist.strings */,
 				37E2C9DC18B4DF7D00D5D823 /* main.m */,
-				37E2C9DE18B4DF7D00D5D823 /* Simple Track Playback-Prefix.pch */,
+				37E2C9DE18B4DF7D00D5D823 /* Spotify Metrics-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37E2C9CC18B4DF7D00D5D823 /* Simple Track Playback */ = {
+		37E2C9CC18B4DF7D00D5D823 /* Spotify Metrics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37E2CA0218B4DF7D00D5D823 /* Build configuration list for PBXNativeTarget "Simple Track Playback" */;
+			buildConfigurationList = 37E2CA0218B4DF7D00D5D823 /* Build configuration list for PBXNativeTarget "Spotify Metrics" */;
 			buildPhases = (
 				37E2C9C918B4DF7D00D5D823 /* Sources */,
 				37E2C9CA18B4DF7D00D5D823 /* Frameworks */,
@@ -174,9 +174,9 @@
 			);
 			dependencies = (
 			);
-			name = "Simple Track Playback";
+			name = "Spotify Metrics";
 			productName = "Empty iOS SDK Project";
-			productReference = 37E2C9CD18B4DF7D00D5D823 /* Simple Track Playback.app */;
+			productReference = 37E2C9CD18B4DF7D00D5D823 /* Spotify Metrics.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 37E2C9C818B4DF7D00D5D823 /* Build configuration list for PBXProject "Simple Track Playback" */;
+			buildConfigurationList = 37E2C9C818B4DF7D00D5D823 /* Build configuration list for PBXProject "Spotify Metrics" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -207,7 +207,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37E2C9CC18B4DF7D00D5D823 /* Simple Track Playback */,
+				37E2C9CC18B4DF7D00D5D823 /* Spotify Metrics */,
 			);
 		};
 /* End PBXProject section */
@@ -353,12 +353,12 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Simple Track Playback/Simple Track Playback-Prefix.pch";
-				INFOPLIST_FILE = "Simple Track Playback/Simple Track Playback-Info.plist";
+				GCC_PREFIX_HEADER = "Simple Track Playback/Spotify Metrics-Prefix.pch";
+				INFOPLIST_FILE = "Simple Track Playback/Spotify Metrics-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ramanjit.spotify-metrics";
-				PRODUCT_NAME = "Simple Track Playback";
+				PRODUCT_NAME = "Spotify Metrics";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -379,12 +379,12 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Simple Track Playback/Simple Track Playback-Prefix.pch";
-				INFOPLIST_FILE = "Simple Track Playback/Simple Track Playback-Info.plist";
+				GCC_PREFIX_HEADER = "Simple Track Playback/Spotify Metrics-Prefix.pch";
+				INFOPLIST_FILE = "Simple Track Playback/Spotify Metrics-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ramanjit.spotify-metrics";
-				PRODUCT_NAME = "Simple Track Playback";
+				PRODUCT_NAME = "Spotify Metrics";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37E2C9C818B4DF7D00D5D823 /* Build configuration list for PBXProject "Simple Track Playback" */ = {
+		37E2C9C818B4DF7D00D5D823 /* Build configuration list for PBXProject "Spotify Metrics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37E2CA0018B4DF7D00D5D823 /* Debug */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37E2CA0218B4DF7D00D5D823 /* Build configuration list for PBXNativeTarget "Simple Track Playback" */ = {
+		37E2CA0218B4DF7D00D5D823 /* Build configuration list for PBXNativeTarget "Spotify Metrics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37E2CA0318B4DF7D00D5D823 /* Debug */,

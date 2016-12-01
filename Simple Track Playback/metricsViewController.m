@@ -26,9 +26,12 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)topTracksClicked:(id)sender {
+    [self performSegueWithIdentifier:@"showTopTracks" sender:nil];
+}
+
 
 - (IBAction)topArtistClicked:(id)sender {
-    NSLog(@"saegue!!");
     [self performSegueWithIdentifier:@"showTopArtist" sender:nil];
 }
 

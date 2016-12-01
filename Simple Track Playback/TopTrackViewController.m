@@ -1,34 +1,27 @@
 //
-//  ArtistViewController.m
+//  TopTrackViewController.m
 //  Simple Track Playback
 //
-//  Created by Ramanjit on 11/26/16.
+//  Created by Ramanjit on 11/30/16.
 //  Copyright © 2016 Your Company. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <SpotifyAuthentication/SpotifyAuthentication.h>
 #import <SpotifyMetadata/SpotifyMetadata.h>
-#import <AVFoundation/AVFoundation.h>
+#import "TopTrackViewController.h"
 
-#import "Config.h"
-#import "TopArtistViewController.h"
+@implementation TopTrackViewController
 
-@implementation TopArtistViewController
-
-- (void) viewWillAppear:(BOOL)animated {
-    
-    
+- (void) viewWillAppear:(BOOL) animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     
     SPTAuth *auth = [SPTAuth defaultInstance];
     
-    NSLog(@"API key %@", auth.session.accessToken);
-    
     NSString *authorizationString = [NSString stringWithFormat:@"Bearer %@", auth.session.accessToken];
     
-    NSMutableURLRequest *requestWithHeaders = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.spotify.com/v1/me/top/artists?limit=20"]];
+    NSMutableURLRequest *requestWithHeaders = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.spotify.com/v1/me/top/tracks?limit=20"]];
     [requestWithHeaders setValue:authorizationString forHTTPHeaderField:@"Authorization"];
     [requestWithHeaders setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     
@@ -37,16 +30,13 @@
         NSError *e;
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&e];
         
-        [self setArtistList:[jsonDictionary valueForKey:@"items"]];
+        [self setTrackList:[jsonDictionary valueForKey:@"items"]];
         [[self tableView] reloadData];
         
+        
     }]resume];
-}
-
-- (void) viewDidLoad {
     
 }
-
 
 #pragma mark - Table View
 
@@ -57,17 +47,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.artistList.count;
+    return self.trackList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    NSData *object = self.artistList[indexPath.row];
+    NSData *object = self.trackList[indexPath.row];
     
     cell.textLabel.text = [object valueForKey:@"name"];
-    cell.detailTextLabel.text = [[object valueForKey:@"genres"] componentsJoinedByString:@", "];
+    cell.detailTextLabel.text = [[object valueForKey:@"artists"][0] valueForKey:@"name"];
     return cell;
 }
 
@@ -83,4 +73,6 @@
 }
 
 
+
 @end
+

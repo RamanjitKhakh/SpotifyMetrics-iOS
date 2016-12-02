@@ -24,6 +24,7 @@
 		790762891DEA16EB007B4ED0 /* metricsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790762881DEA16EB007B4ED0 /* metricsViewController.m */; };
 		7907628C1DEA2972007B4ED0 /* TopArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907628B1DEA2972007B4ED0 /* TopArtistViewController.m */; };
 		790B0D111DEFD0F0007897F9 /* TopTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790B0D101DEFD0F0007897F9 /* TopTrackViewController.m */; };
+		79FB28181DF10DAD00148C74 /* TrackDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB28171DF10DAD00148C74 /* TrackDetailViewController.m */; };
 		999DC7101DAFD271005C0796 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999DC70F1DAFD271005C0796 /* WebViewController.m */; };
 		999DC7141DAFD7C2005C0796 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999DC7131DAFD7C2005C0796 /* SafariServices.framework */; };
 		CE0C640C1A9B61EB00B5F6F6 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C640B1A9B61EB00B5F6F6 /* LoginController.m */; };
@@ -57,6 +58,8 @@
 		7907628D1DEA298D007B4ED0 /* TopArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopArtistViewController.h; sourceTree = "<group>"; };
 		790B0D101DEFD0F0007897F9 /* TopTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopTrackViewController.m; sourceTree = "<group>"; };
 		790B0D121DEFD105007897F9 /* TopTrackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopTrackViewController.h; sourceTree = "<group>"; };
+		79FB28171DF10DAD00148C74 /* TrackDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackDetailViewController.m; sourceTree = "<group>"; };
+		79FB28191DF10DE500148C74 /* TrackDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackDetailViewController.h; sourceTree = "<group>"; };
 		999DC70E1DAFD271005C0796 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		999DC70F1DAFD271005C0796 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		999DC7131DAFD7C2005C0796 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -143,6 +146,8 @@
 				37E2C9D718B4DF7D00D5D823 /* Supporting Files */,
 				790762881DEA16EB007B4ED0 /* metricsViewController.m */,
 				7907628A1DEA1704007B4ED0 /* metricsViewController.h */,
+				79FB28171DF10DAD00148C74 /* TrackDetailViewController.m */,
+				79FB28191DF10DE500148C74 /* TrackDetailViewController.h */,
 			);
 			path = "Simple Track Playback";
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				790762891DEA16EB007B4ED0 /* metricsViewController.m in Sources */,
+				79FB28181DF10DAD00148C74 /* TrackDetailViewController.m in Sources */,
 				37E2C9EA18B4DF7D00D5D823 /* ViewController.m in Sources */,
 				790B0D111DEFD0F0007897F9 /* TopTrackViewController.m in Sources */,
 				999DC7101DAFD271005C0796 /* WebViewController.m in Sources */,

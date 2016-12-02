@@ -10,11 +10,18 @@
 #import <SpotifyAuthentication/SpotifyAuthentication.h>
 #import <SpotifyMetadata/SpotifyMetadata.h>
 #import "TopTrackViewController.h"
+#import "TrackDetailViewController.h"
 
 @implementation TopTrackViewController
 
 - (void) viewWillAppear:(BOOL) animated {
+    //runs even when upper views are popped off
     [super viewWillAppear:animated];
+    
+}
+
+- (void) viewDidLoad{
+    // runs once for view pop
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     
     SPTAuth *auth = [SPTAuth defaultInstance];
@@ -35,6 +42,13 @@
         
         
     }]resume];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    TrackDetailViewController *nextView = [segue destinationViewController];
+    //deselect the cell on return
+    [nextView setTrack: self.trackList[((NSIndexPath *)sender).row]];
+    
     
 }
 
@@ -71,6 +85,14 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     //empty for now...
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    [self performSegueWithIdentifier:@"showDetails" sender:indexPath];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 
 

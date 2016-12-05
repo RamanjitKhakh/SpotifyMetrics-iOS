@@ -32,7 +32,39 @@
     [self.nameLabel setText:[self.track valueForKey:@"name"]];
     [self.artistLabel setText:[[self.track valueForKey:@"artists"][0] valueForKey:@"name" ]];
     
+    //api request
+    SPTAuth *auth = [SPTAuth defaultInstance];
+    NSString *authorizationString = [NSString stringWithFormat:@"Bearer %@", auth.session.accessToken];
     
+    NSString *preparedURL = [NSString stringWithFormat:@"https://api.spotify.com/v1/audio-features/%@", [self.track valueForKey:@"id"]];
+    
+    NSURL *uriString = [NSURL URLWithString:preparedURL];
+    
+    NSLog(@"contacting %@", uriString);
+    
+    NSMutableURLRequest *requestWithHeaders = [NSMutableURLRequest requestWithURL:uriString];
+    [requestWithHeaders setValue:authorizationString forHTTPHeaderField:@"Authorization"];
+    [requestWithHeaders setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    
+    [[[NSURLSession sharedSession] dataTaskWithRequest:requestWithHeaders completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSError *e;
+        __block NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&e];
+        
+        //sync with main
+        dispatch_async(dispatch_get_main_queue(), ^(){
+            
+            NSString *danceString = [NSString stringWithFormat:@"%@", [jsonDictionary valueForKey:@"danceability"] ];
+            
+            self.danceabilityProgress.progress = [[jsonDictionary valueForKey:@"danceability"] floatValue];
+            
+            [self.danceabilityLabel setText:danceString];
+            
+            NSLog(@" type is %@",NSStringFromClass([[jsonDictionary valueForKey:@"danceability"] class]) );
+        });
+        
+        
+    }]resume];
     
 }
 

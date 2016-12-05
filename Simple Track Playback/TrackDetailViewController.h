@@ -10,8 +10,10 @@
 
 @interface TrackDetailViewController : UIViewController
 @property id track;
-@property (weak, nonatomic) IBOutlet UIImageView *albumCover;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *artistLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *albumCover;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *artistLabel;
+@property (strong, nonatomic) IBOutlet UILabel *danceabilityLabel;
+@property (strong, nonatomic) IBOutlet UIProgressView *danceabilityProgress;
 
 @end

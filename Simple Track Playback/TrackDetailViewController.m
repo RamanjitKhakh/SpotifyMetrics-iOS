@@ -54,13 +54,24 @@
         //sync with main
         dispatch_async(dispatch_get_main_queue(), ^(){
             
+            // set danceablility
             NSString *danceString = [NSString stringWithFormat:@"%@", [jsonDictionary valueForKey:@"danceability"] ];
-            
             self.danceabilityProgress.progress = [[jsonDictionary valueForKey:@"danceability"] floatValue];
-            
             [self.danceabilityLabel setText:danceString];
             
-            NSLog(@" type is %@",NSStringFromClass([[jsonDictionary valueForKey:@"danceability"] class]) );
+            //set energy
+            NSString *energyString = [NSString stringWithFormat:@"%@",[jsonDictionary valueForKey:@"energy"]];
+            [self.energyLabel setText:energyString];
+            self.energyProgress.progress = [[jsonDictionary valueForKey:@"energy"] floatValue];
+            
+            //set tempo
+            NSString *tempoString = [NSString stringWithFormat:@"%@", [jsonDictionary valueForKey:@"tempo"]];
+            [self.tempoLabel setText:tempoString];
+            
+            NSString *valenceString = [NSString stringWithFormat:@"%@", [jsonDictionary valueForKey:@"valence"] ];
+            
+            [self.valenceLabel setText:valenceString];
+            //NSLog(@" type is %@",NSStringFromClass([[jsonDictionary valueForKey:@"danceability"] class]) );
         });
         
         

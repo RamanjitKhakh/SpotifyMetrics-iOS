@@ -15,5 +15,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *artistLabel;
 @property (strong, nonatomic) IBOutlet UILabel *danceabilityLabel;
 @property (strong, nonatomic) IBOutlet UIProgressView *danceabilityProgress;
+@property (weak, nonatomic) IBOutlet UILabel *energyLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *energyProgress;
+@property (weak, nonatomic) IBOutlet UILabel *tempoLabel;
+@property (weak, nonatomic) IBOutlet UILabel *valenceLabel;
 
 @end

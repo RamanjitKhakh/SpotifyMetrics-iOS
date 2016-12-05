@@ -180,6 +180,8 @@
     if (self.player == nil) {
         NSError *error = nil;
         self.player = [SPTAudioStreamingController sharedInstance];
+        
+        
         if ([self.player startWithClientId:auth.clientID audioController:nil allowCaching:YES error:&error]) {
             self.player.delegate = self;
             self.player.playbackDelegate = self;
@@ -202,7 +204,8 @@
         [alert addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil]];
         [self presentViewController:alert animated:YES completion:nil];
     }
-    [SPTAuth defaultInstance].session = nil;
+    //this line kills the whole session
+    //[SPTAuth defaultInstance].session = nil;
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -281,7 +284,7 @@
 
 - (void)audioStreamingDidLogin:(SPTAudioStreamingController *)audioStreaming {
     [self updateUI];
-    [self.player playSpotifyURI:@"spotify:user:spotify:playlist:2yLXxKhhziG2xzy7eyD4TD" startingWithIndex:0 startingWithPosition:10 callback:^(NSError *error) {
+    [self.player playSpotifyURI:@"spotify:track:7mhk9WyqZZzvTTCQKfh2iV" startingWithIndex:0 startingWithPosition:0 callback:^(NSError *error) {
         if (error != nil) {
             NSLog(@"*** failed to play: %@", error);
             return;

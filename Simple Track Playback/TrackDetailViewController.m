@@ -79,6 +79,10 @@
     
 }
 
+- (IBAction)playSong:(id)sender {
+    [self performSegueWithIdentifier:@"showPlayerFromTrack" sender:nil];
+    
+}
 
 
 @end

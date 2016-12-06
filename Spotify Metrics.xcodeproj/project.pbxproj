@@ -25,6 +25,8 @@
 		7907628C1DEA2972007B4ED0 /* TopArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7907628B1DEA2972007B4ED0 /* TopArtistViewController.m */; };
 		790B0D111DEFD0F0007897F9 /* TopTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790B0D101DEFD0F0007897F9 /* TopTrackViewController.m */; };
 		795DF02D1DF66CEC0071F39F /* RecommendedArtists.m in Sources */ = {isa = PBXBuildFile; fileRef = 795DF02C1DF66CEC0071F39F /* RecommendedArtists.m */; };
+		798B2BC61DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 798B2BC41DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@3x.png */; };
+		798B2BC71DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 798B2BC51DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@2x.png */; };
 		79FB28181DF10DAD00148C74 /* TrackDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB28171DF10DAD00148C74 /* TrackDetailViewController.m */; };
 		999DC7101DAFD271005C0796 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999DC70F1DAFD271005C0796 /* WebViewController.m */; };
 		999DC7141DAFD7C2005C0796 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999DC7131DAFD7C2005C0796 /* SafariServices.framework */; };
@@ -61,6 +63,8 @@
 		790B0D121DEFD105007897F9 /* TopTrackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopTrackViewController.h; sourceTree = "<group>"; };
 		795DF02B1DF66CD50071F39F /* RecommendedArtists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendedArtists.h; sourceTree = "<group>"; };
 		795DF02C1DF66CEC0071F39F /* RecommendedArtists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendedArtists.m; sourceTree = "<group>"; };
+		798B2BC41DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotify-Metrics-Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		798B2BC51DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spotify-Metrics-Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
 		79FB28171DF10DAD00148C74 /* TrackDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackDetailViewController.m; sourceTree = "<group>"; };
 		79FB28191DF10DE500148C74 /* TrackDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackDetailViewController.h; sourceTree = "<group>"; };
 		999DC70E1DAFD271005C0796 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 		37E2C9D718B4DF7D00D5D823 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				798B2BC41DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@3x.png */,
+				798B2BC51DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@2x.png */,
 				CE4A60C81A9CBF9600DDA394 /* backdrop.png */,
 				37E2C9D818B4DF7D00D5D823 /* Spotify Metrics-Info.plist */,
 				37E2C9D918B4DF7D00D5D823 /* InfoPlist.strings */,
@@ -229,6 +235,8 @@
 			files = (
 				37E2C9EC18B4DF7D00D5D823 /* Images.xcassets in Resources */,
 				CE4A60C91A9CBF9600DDA394 /* backdrop.png in Resources */,
+				798B2BC61DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@3x.png in Resources */,
+				798B2BC71DF76C6100EA2FA0 /* Spotify-Metrics-Icon-App-60x60@2x.png in Resources */,
 				37E2C9E418B4DF7D00D5D823 /* Main_iPhone.storyboard in Resources */,
 				37E2C9DB18B4DF7D00D5D823 /* InfoPlist.strings in Resources */,
 			);

@@ -19,5 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *energyProgress;
 @property (weak, nonatomic) IBOutlet UILabel *tempoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *valenceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *loudnessLabel;
+
+@property (weak, nonatomic) IBOutlet UIProgressView *loudnessProgress;
 
 @end

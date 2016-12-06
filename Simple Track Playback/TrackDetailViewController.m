@@ -73,6 +73,18 @@
             NSString *valenceString = [NSString stringWithFormat:@"%@", [jsonDictionary valueForKey:@"valence"] ];
             
             [self.valenceLabel setText:valenceString];
+            
+            //set loudness
+            NSString *loudString = [NSString stringWithFormat:@"%@", [jsonDictionary valueForKey:@"loudness"]];
+            [self.tempoLabel setText:tempoString];
+            
+            
+            [self.loudnessLabel setText:loudString];
+            
+            float loudProgress = [[jsonDictionary valueForKey:@"loudness"] floatValue] / 60.0;
+            loudProgress *= -1;
+            self.loudnessProgress.progress = loudProgress;
+            
             //NSLog(@" type is %@",NSStringFromClass([[jsonDictionary valueForKey:@"danceability"] class]) );
         });
         

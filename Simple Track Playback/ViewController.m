@@ -45,6 +45,7 @@
     [super viewDidLoad];
     self.trackTitle.text = @"Nothing Playing";
     self.artistTitle.text = @"";
+    [[self navigationController] setNavigationBarHidden:YES animated:NO];
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -284,7 +285,9 @@
 
 - (void)audioStreamingDidLogin:(SPTAudioStreamingController *)audioStreaming {
     [self updateUI];
-    [self.player playSpotifyURI:@"spotify:track:7mhk9WyqZZzvTTCQKfh2iV" startingWithIndex:0 startingWithPosition:0 callback:^(NSError *error) {
+    NSLog(@"track is %@", self.track);
+    
+    [self.player playSpotifyURI:[self.track valueForKey:@"uri"] startingWithIndex:0 startingWithPosition:0 callback:^(NSError *error) {
         if (error != nil) {
             NSLog(@"*** failed to play: %@", error);
             return;

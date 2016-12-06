@@ -12,11 +12,13 @@
 #import <AVFoundation/AVFoundation.h>
 
 #import "TrackDetailViewController.h"
+#import "ViewController.h"
 
 @implementation TrackDetailViewController
 
 - (void) viewDidLoad {
     NSLog(@"welcome with %@", self.track);
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     
     dispatch_async(dispatch_get_main_queue(), ^(void){
         NSString *str = [[[self.track valueForKey:@"album"] valueForKey:@"images"][0] valueForKey:@"url"];
@@ -79,10 +81,18 @@
     
 }
 
-- (IBAction)playSong:(id)sender {
-    [self performSegueWithIdentifier:@"showPlayerFromTrack" sender:nil];
-    
+- (void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
+- (IBAction)playSong:(id)sender {
+    [self performSegueWithIdentifier:@"showPlayerFromTrack" sender:self.track];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ViewController *nextView = [segue destinationViewController];
+    nextView.track = sender;
+    
+}
 
 @end

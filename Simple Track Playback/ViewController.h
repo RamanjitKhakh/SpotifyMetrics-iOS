@@ -19,4 +19,6 @@
 
 @interface ViewController : UIViewController<SPTAudioStreamingDelegate, SPTAudioStreamingPlaybackDelegate>
 
+@property id track;
+
 @end

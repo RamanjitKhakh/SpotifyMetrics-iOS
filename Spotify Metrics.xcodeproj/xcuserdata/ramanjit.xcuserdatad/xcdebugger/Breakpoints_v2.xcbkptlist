@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Simple Track Playback/TopArtistViewController.m"
-            timestampString = "502257043.551204"
+            timestampString = "502690071.54676"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "-viewWillAppear:"
             landmarkType = "7">
          </BreakpointContent>

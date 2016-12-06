@@ -285,7 +285,15 @@
 
 - (void)audioStreamingDidLogin:(SPTAudioStreamingController *)audioStreaming {
     [self updateUI];
-    NSLog(@"track is %@", self.track);
+    //NSLog(@"track is %@", self.track);
+    
+    if([[self.track valueForKey:@"is_playable"] integerValue] == 0){
+        NSError *error = nil;
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"This Song cannot be played according to Spotify" message:[error description] preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+
+    }
     
     [self.player playSpotifyURI:[self.track valueForKey:@"uri"] startingWithIndex:0 startingWithPosition:0 callback:^(NSError *error) {
         if (error != nil) {

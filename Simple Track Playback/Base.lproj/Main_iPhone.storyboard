@@ -399,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419" y="1497"/>
+            <point key="canvasLocation" x="1525" y="1576"/>
         </scene>
         <!--Your Top Tracks-->
         <scene sceneID="5nj-NN-g0t">
@@ -637,6 +637,9 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="hh0-iI-aME"/>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="showPlayerForRecommended" id="Jha-eD-xih"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPf-37-kMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -651,4 +654,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jha-eD-xih"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -100,7 +100,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             //prepare segue
             NSArray *topTrackForRecommended = [jsonDictionary valueForKey:@"tracks"];
-            
+            [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
             //NSLog(@"preparing for segue %@", topTrackForRecommended[arc4random_uniform(topTrackForRecommended.count)] );
             
             [self performSegueWithIdentifier:@"showPlayerForRecommended" sender:topTrackForRecommended[arc4random_uniform(topTrackForRecommended.count)]];

@@ -275,32 +275,6 @@
                                 <color key="textColor" red="0.97814254373944198" green="0.98725848998845667" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-Cl-L6D">
-                                <rect key="frame" x="68" y="634" width="50" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="s1D-EK-Csg"/>
-                                </constraints>
-                                <state key="normal" title="&lt;&lt;">
-                                    <color key="titleColor" red="0.62807674229999999" green="1" blue="0.59483990919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="rewind:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VWx-Fb-BCb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPW-Ng-mc8">
-                                <rect key="frame" x="233" y="634" width="50" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="H8l-bp-Drg"/>
-                                </constraints>
-                                <state key="normal" title="&gt;&gt;">
-                                    <color key="titleColor" red="0.62807674229999999" green="1" blue="0.59483990919999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="fastForward:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q51-UA-8CE"/>
-                                </connections>
-                            </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tWH-lO-Xp4">
                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -313,7 +287,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTr-Qd-kUw">
                                 <rect key="frame" x="108" y="667" width="134" height="30"/>
-                                <state key="normal" title="Log out from player">
+                                <state key="normal" title="Return from player">
                                     <color key="titleColor" red="0.46784092586385861" green="1" blue="0.44851382665166906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -368,20 +342,16 @@
                             <constraint firstAttribute="trailingMargin" secondItem="x9I-gj-ZxO" secondAttribute="trailing" constant="10" id="Gk6-MA-Efy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="geZ-ir-3zL" secondAttribute="trailing" constant="111.5" id="HTw-b7-iya"/>
                             <constraint firstItem="x9I-gj-ZxO" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ib5-iX-OpW"/>
-                            <constraint firstItem="aVS-Cl-L6D" firstAttribute="centerY" secondItem="yQS-IA-EZ2" secondAttribute="centerY" id="Iox-6G-WMX"/>
                             <constraint firstAttribute="height" secondItem="38N-Ud-2aK" secondAttribute="height" id="Mr8-ac-A0C"/>
                             <constraint firstItem="5cd-XW-Ifk" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Qdp-ei-7O6"/>
                             <constraint firstAttribute="width" secondItem="38N-Ud-2aK" secondAttribute="width" id="V81-2D-ob9"/>
                             <constraint firstItem="x9I-gj-ZxO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="VqH-lC-rOH"/>
-                            <constraint firstItem="jPW-Ng-mc8" firstAttribute="leading" secondItem="yQS-IA-EZ2" secondAttribute="trailing" constant="20" id="ZIB-k1-8Sf"/>
                             <constraint firstItem="38N-Ud-2aK" firstAttribute="centerX" secondItem="geZ-ir-3zL" secondAttribute="centerX" id="ZSk-If-Ah9"/>
                             <constraint firstItem="bbR-ps-Qlp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="aIM-Vh-fIv"/>
                             <constraint firstItem="38N-Ud-2aK" firstAttribute="centerX" secondItem="yQS-IA-EZ2" secondAttribute="centerX" constant="-0.5" id="bKf-tw-AeL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5cd-XW-Ifk" secondAttribute="trailing" constant="15" id="bLZ-4a-INZ"/>
                             <constraint firstItem="38N-Ud-2aK" firstAttribute="top" secondItem="9f5-hL-PF7" secondAttribute="top" id="d1i-6Q-d3C"/>
                             <constraint firstItem="5cd-XW-Ifk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="gSP-da-OIa"/>
-                            <constraint firstItem="yQS-IA-EZ2" firstAttribute="leading" secondItem="aVS-Cl-L6D" secondAttribute="trailing" constant="20" id="gZv-La-ehp"/>
-                            <constraint firstItem="jPW-Ng-mc8" firstAttribute="centerY" secondItem="yQS-IA-EZ2" secondAttribute="centerY" id="hYC-sl-x3c"/>
                             <constraint firstItem="geZ-ir-3zL" firstAttribute="top" secondItem="9f5-hL-PF7" secondAttribute="bottom" priority="998" constant="26" id="lIP-lP-x9c"/>
                             <constraint firstAttribute="centerX" secondItem="38N-Ud-2aK" secondAttribute="centerX" id="u50-b5-dFR"/>
                             <constraint firstItem="bTr-Qd-kUw" firstAttribute="top" secondItem="yQS-IA-EZ2" secondAttribute="bottom" constant="3" id="uCK-ww-N38"/>
@@ -395,9 +365,7 @@
                         <outlet property="artistTitle" destination="x9I-gj-ZxO" id="6iX-0R-BRQ"/>
                         <outlet property="coverView" destination="9f5-hL-PF7" id="qmc-6g-3Wd"/>
                         <outlet property="coverView2" destination="38N-Ud-2aK" id="qJG-gu-CwD"/>
-                        <outlet property="nextButton" destination="jPW-Ng-mc8" id="z1b-HX-EGh"/>
                         <outlet property="playbackSourceTitle" destination="bbR-ps-Qlp" id="CK7-lQ-DvJ"/>
-                        <outlet property="prevButton" destination="aVS-Cl-L6D" id="ZDo-cs-JOf"/>
                         <outlet property="progressSlider" destination="5cd-XW-Ifk" id="SAH-UZ-qcr"/>
                         <outlet property="spinner" destination="tWH-lO-Xp4" id="4fA-Wu-jTu"/>
                         <outlet property="trackTitle" destination="geZ-ir-3zL" id="pym-ei-0aB"/>
